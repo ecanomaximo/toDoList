@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+    --primary-color: rgb(125,76,219);
+    --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+header {
+    display: flex;
+    max-width: 640px;
+    margin: 100px auto 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    justify-content: center;
+}
+
+.containerList {
+    display: flex;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.inputBox {
+    display: block;
+    margin-right: 37px;
+}
+
+.inputTask {
+    width: 120%;
+    height: 29px;
+    border-right: none;
+}
+
+.buttonBox {
+    display: block;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.taskButton {
+    height: 29px;
+    border-left: none;
+    background-color: #fff;
+}
+
+.taskButton img {
+    margin-top: 2px;
+    height: 20px;
+}
+
+.taskButton:hover {
+    background-color: #4CAF50;
+    opacity: 0.9;
+    color: white;
+}
+
+.buttonDeleteTask {
+    display: inline-block;
+    margin-left: 10px;
+}
