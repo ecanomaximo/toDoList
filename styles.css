@@ -49,13 +49,15 @@ header {
 
 .inputBox {
     display: block;
-    margin-right: 37px;
+    margin-right: 36px;
 }
 
 .inputTask {
     width: 120%;
     height: 29px;
+    border-style: groove;
     border-right: none;
+    border-radius: 4px 0 0 4px;
 }
 
 .buttonBox {
@@ -66,22 +68,41 @@ header {
 
 .taskButton {
     height: 29px;
+    border-style: groove;
     border-left: none;
+    border-radius: 0 4px 4px 0;
     background-color: #fff;
 }
 
 .taskButton img {
+    display: flex;
     margin-top: 2px;
     height: 20px;
 }
 
 .taskButton:hover {
     background-color: #4CAF50;
-    opacity: 0.9;
+    opacity: 0.8;
     color: white;
+    border-style: groove;
+    border-left: none;
+}
+
+.taskList li {
+    display: flex;
+    margin-top: 20px;
 }
 
 .buttonDeleteTask {
-    display: inline-block;
-    margin-left: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 62%;
+    height: 29px;
+    border: none;
+    margin-top: 4px;
+}
+
+.buttonDeleteTask img {
+    height: 15px;
+    pointer-events: none;
 }

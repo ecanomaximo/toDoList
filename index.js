@@ -23,7 +23,7 @@ function resetInput() {
 
 function createButtonDel(elementLi) {
     const elementButtonDel = document.createElement('button');
-    elementButtonDel.innerText = 'delete';
+    elementButtonDel.innerHTML = '<img src="./assets/img/trash.png">';
     elementButtonDel.setAttribute('class', 'buttonDeleteTask');
     elementButtonDel.setAttribute('title', 'Delete task');
     elementLi.appendChild(elementButtonDel);
